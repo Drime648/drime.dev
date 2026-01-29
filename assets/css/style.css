@@ -23,6 +23,7 @@ body{
   background-color: #140f24;
   color: white;
   line-height: 1.6;
+  font-size: 1.6rem;
 }
 
 
@@ -38,6 +39,12 @@ header{
   justify-content: space-between;
   align-items: flex-end;
   z-index: 100;
+}
+
+.container {
+  width: 50%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 
@@ -119,5 +126,49 @@ nav a:hover {
   transform: scale(1.2);
 }
 
+.about-top {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
 
+.about-text {
+  flex: 1;
+}
 
+.about-img {
+  display: flex;
+  justify-content: center; /* centers the circle in its container */
+  align-items: center;     /* optional for vertical centering */
+  flex: none;              /* prevents it from stretching */
+}
+
+.about-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.about h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.about th,
+.about td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  text-align: left;
+}
+
+.about th {
+  color: #9b5cff;
+}
