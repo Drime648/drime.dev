@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 import PostCardLayout from "../layouts/PostCardLayout.astro";
 import {getCollection} from "astro:content";
 
-const posts = await getCollection("blog");
+const posts = await getCollection("writeup");
 posts.sort((x, y) => x.data.date - y.data.date);
 ---
 
@@ -13,7 +13,7 @@ posts.sort((x, y) => x.data.date - y.data.date);
     <div class="posts">
       {posts.map(post => (
         <PostCardLayout
-          slug={post.slug}
+          link=`/writeups/${post.slug}`,
           title={post.data.title},
           description={post.data.description},
           date={post.data.date},

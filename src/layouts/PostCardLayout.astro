@@ -1,6 +1,6 @@
 ---
 const {
-  slug,
+  link,
   title,
   description,
   date,
@@ -9,7 +9,7 @@ const {
 ---
 
 
-<a class="card" href=`/blog/${slug}/`>
+<a class="card" href=`${link}`>
   <h2>{title}</h2>
   <p>{description}</p>
   <p class="post-date"><em>Posted: {date.toDateString()}</em></p>
