@@ -16,7 +16,8 @@ const { Content } = await post.render();
 ---
 
 <BlogLayout
-  title={post.data.title}
+  title={post.slug}
+  blog_title={post.data.title}
   description={post.data.description}
   date={post.data.date}>
   <Content />

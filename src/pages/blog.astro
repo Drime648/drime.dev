@@ -7,7 +7,7 @@ const posts = await getCollection("blog");
 posts.sort((x, y) => x.data.date - y.data.date);
 ---
 
-<BaseLayout>
+<BaseLayout title="Blog">
   <div class="blog">
     <h1>Blog</h1>
     <div class="posts">
