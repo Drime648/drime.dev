@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
+import PostCardLayout from "../layouts/PostCardLayout.astro";
 import {getCollection} from "astro:content";
 
 const posts = await getCollection("blog");
@@ -11,16 +12,13 @@ posts.sort((x, y) => x.data.date - y.data.date);
     <h1>Blog</h1>
     <div class="posts">
       {posts.map(post => (
-      <a class="card" href=`/blog/${post.slug}/`>
-        <h2>{post.data.title}</h2>
-        <p>{post.data.description}</p>
-        <p class="post-date"><em>Posted: {post.data.date.toDateString()}</em></p>
-          <div class="tag-container">
-          {post.data.tags.map(tag => (
-            <span class="tag">{tag}</span>
-          ))}
-          </div>
-        </a>
+        <PostCardLayout
+          slug={post.slug}
+          title={post.data.title},
+          description={post.data.description},
+          date={post.data.date},
+          tags={post.data.tags}
+        ></PostCardLayout>
       ))}
     </div>
   </div>
