@@ -76,16 +76,17 @@ nav a:hover {
 }
 
 .hero {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   text-align: center;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 0;
   height: 70%;
+  margin-top: 20rem;
 }
 
 .hero-content {
-  width: 40%;
+  /* width: 40%; */
   line-height: 2.0;
 }
 
