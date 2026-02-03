@@ -1,17 +1,36 @@
----
-
----
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="/style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo"> Drime's blog</a>
+      <nav>
+        <a href="/about/" class="active"> About Me</a>
+        <a href="/writeups/" class="active">Writeups</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/resume/" class="active">Resume</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class = "container hero-content">
+        <h2 class="hero-title">Hi, I'm Dhruv</h2>
+        <p class="hero-subtitle">
+          Welcome to my homepage! I'm mainly interested Computer Science
+          and Cybersecurity and I'll try to talk about it here.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
+
