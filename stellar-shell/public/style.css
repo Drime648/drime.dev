@@ -197,6 +197,7 @@ h1 {
   border-color: white;
   border: 1px solid #9b5cff;
   transition: 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .card:hover {
@@ -204,14 +205,21 @@ h1 {
   color: #9b5cff;
 }
 
-.card h3 {
+.card h2 {
   margin-top: 1rem;
   text-align: center;
+  font-size: 3rem;
 }
 
 .card p {
   margin-left: 10px;
-  color: gray;
+  color: #9ca3af;
+}
+
+.card .post-date {
+  font-size: 1.2rem;
+  color: #6b7280;
+
 }
 
 .tag-container {
@@ -236,4 +244,23 @@ h1 {
 
 .blog-data {
   margin-top: 20px;
+}
+
+/* Post Header */
+.post-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  /* padding-bottom: 1.5rem; */
+}
+
+
+/* Description / Subtitle */
+.post-description {
+  color: #9ca3af;
+  margin: 0;
+}
+
+.post-date {
+  color: #6b7280;
+  margin-top: 10px;
 }

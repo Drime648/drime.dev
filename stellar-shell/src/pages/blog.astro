@@ -1,19 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
+import {getCollection} from "astro:content";
+
+const posts = await getCollection("blog");
+posts.sort((x, y) => x.data.date - y.data.date);
 ---
 
 <BaseLayout>
   <div class="blog">
     <h1>Blog</h1>
     <div class="posts">
-      <a class="card" href="/blog/CPTC_Infrastructure/">
-        <h3>Test Title</h3>
-        <p>Test Description</p>
-        <div class="tag-container">
-          <span class="tag">tag1</span>
-          <span class="tag">tag2</span>
-        </div>
-      </a>
+      {posts.map(post => (
+      <a class="card" href=`/blog/${post.slug}/`>
+        <h2>{post.data.title}</h2>
+        <p>{post.data.description}</p>
+        <p class="post-date"><em>Posted: {post.data.date.toDateString()}</em></p>
+          <div class="tag-container">
+          {post.data.tags.map(tag => (
+            <span class="tag">{tag}</span>
+          ))}
+          </div>
+        </a>
+      ))}
     </div>
   </div>
 </BaseLayout>
