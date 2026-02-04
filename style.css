@@ -263,3 +263,21 @@ h1 {
   color: #6b7280;
   margin-top: 10px;
 }
+
+/* phone stuff */
+@media (max-width: 1480px) {
+  .container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .social-icons {
+    gap: 1.5rem;
+  }
+  .about-top {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+
+}
