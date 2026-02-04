@@ -266,7 +266,7 @@ h1 {
 
 
 /* phone stuff */
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .container {
     width: 90%;
     max-width: 900px;
@@ -295,11 +295,9 @@ h1 {
     align-items: flex-end;
     flex-direction: column;
   }
-
-
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1480px) {
   .about-top {
     gap: 1.5rem;
     flex-direction: column;
