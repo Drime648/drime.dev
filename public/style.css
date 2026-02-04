@@ -265,15 +265,19 @@ h1 {
 }
 
 /* phone stuff */
-@media (max-width: 768px) {
+@media (max-width: 1480px) {
   .container {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
   }
 
-  .social-icons,
-  .about-top {
+  .social-icons {
     gap: 1.5rem;
   }
+  .about-top {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+
 }
