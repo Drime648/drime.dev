@@ -264,6 +264,7 @@ h1 {
   margin-top: 10px;
 }
 
+
 /* phone stuff */
 @media (max-width: 1480px) {
   .container {
@@ -279,5 +280,4 @@ h1 {
     gap: 1.5rem;
     flex-direction: column;
   }
-
 }
