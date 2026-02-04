@@ -28,7 +28,7 @@ body{
 
 
 header{
-  margin-top: 0px;
+  margin: 0 auto;
   top: 0;
   left: 0;
   width: 100%;
@@ -280,4 +280,25 @@ h1 {
     gap: 1.5rem;
     flex-direction: column;
   }
+
+  header{
+    margin: 0 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 100;
+  }
+
+  nav {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+
 }
