@@ -303,3 +303,12 @@ h1 {
     flex-direction: column;
   }
 }
+
+.post-content h2 {
+  margin-top: 2rem;
+}
+
+
+.post-content a {
+  color: #9b5cff;
+}
