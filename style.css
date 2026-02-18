@@ -311,4 +311,12 @@ h1 {
 
 .post-content a {
   color: #9b5cff;
+  border-bottom: 2px solid;
+}
+
+.post-content img {
+  max-width: 100%;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 0 0.7rem dimgray;
 }
