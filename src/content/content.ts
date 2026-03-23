@@ -10,13 +10,4 @@ const blog = defineCollection({
 });
 
 
-const writeup = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    date: z.date(),
-    description: z.string(),
-    tags: z.array(z.string())
-  }),
-});
-
 export const collections = { blog, writeup };

@@ -166,4 +166,4 @@ We got back to our hotel room by 6:00 PM, and the report-writing grind began. Ou
 
 The next day, we gave our presentations and discovered that we won the competition.
 
-# Closing Thoughts
+## Closing Thoughts
